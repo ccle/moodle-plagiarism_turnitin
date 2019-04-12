@@ -108,7 +108,10 @@ $string['useturnitin_mod'] = 'Enable Turnitin for {$a}';
 $string['pp_configuredesc'] = 'You must configure this module within the turnitintooltwo module. Please click <a href={$a}/admin/settings.php?section=modsettingturnitintooltwo>here</a> to configure this plugin';
 $string['turnitindefaults'] = 'Turnitin plagiarism plugin default settings';
 $string['defaultsdesc'] = 'The following settings are the defaults set when enabling Turnitin within an Activity Module';
-$string['turnitinpluginsettings'] = 'Turnitin plagiarism plugin settings';
+// START UCLA MOD: CCLE-7850 - Rename Turnitin setting title from Turnitin plagiarism plugin settings to Turnitin plugin settings.
+// $string['turnitinpluginsettings'] = 'Turnitin plagiarism plugin settings';
+$string['turnitinpluginsettings'] = 'Turnitin settings';
+// END UCLA MOD: CCLE-7850.
 $string['pperrorsdesc'] = 'There has been a problem in trying to upload the files below to Turnitin. To resubmit, select the files you wish to resubmit and press the resubmit button. These will then be processed the next time the cron is run.';
 $string['pperrorssuccess'] = 'The files you selected have been resubmitted and will be processed by the cron.';
 $string['pperrorsfail'] = 'There was a problem with some of the files you selected, A new cron event could not be created for them.';
