@@ -60,9 +60,14 @@ $string['erater_mechanics'] = 'Mechanics';
 $string['erater_style'] = 'Style';
 $string['anonblindmarkingnote'] = 'Note: The separate Turnitin anonymous marking setting has been removed. Turnitin will use Moodle\'s blind marking setting to determine the anonymous marking setting.';
 $string['transmatch'] = 'Translated Matching';
-$string['genduedate'] = 'Generate reports on due date (students can resubmit until due date)';
-$string['genimmediately1'] = 'Generate reports immediately (students cannot resubmit)';
-$string['genimmediately2'] = 'Generate reports immediately (students can resubmit until due date): After {$a->num_resubmissions} resubmissions, reports generate after {$a->num_hours} hours';
+// START UCLA MOD: CCLE-8136-Turnitin-wording-change.
+// $string['genduedate'] = 'Generate reports on due date (students can resubmit until due date)';
+// $string['genimmediately1'] = 'Generate reports immediately (students cannot resubmit)';
+// $string['genimmediately2'] = 'Generate reports immediately (students can resubmit until due date): After {$a->num_resubmissions} resubmissions, reports generate after {$a->num_hours} hours';
+$string['genduedate'] = 'Resubmissions allowed until due date (generate reports on due date)';
+$string['genimmediately1'] = 'Resubmissions disallowed';
+$string['genimmediately2'] = 'Resubmissions allowed until due date (After {$a->num_resubmissions} resubmissions, reports generate after {$a->num_hours} hours)';
+// END UCLA MOD: CCLE-8136-Turnitin-wording-change.
 $string['launchquickmarkmanager'] = 'Launch Quickmark Manager';
 $string['launchpeermarkmanager'] = 'Launch Peermark Manager';
 $string['studentreports'] = 'Display Similarity Reports to Students';
@@ -106,7 +111,10 @@ $string['useturnitin'] = 'Enable Turnitin';
 $string['useturnitin_mod'] = 'Enable Turnitin for {$a}';
 $string['turnitindefaults'] = 'Turnitin plagiarism plugin default settings';
 $string['defaultsdesc'] = 'The following settings are the defaults set when enabling Turnitin within an Activity Module';
-$string['turnitinpluginsettings'] = 'Turnitin plagiarism plugin settings';
+// START UCLA MOD: CCLE-7850 - Rename Turnitin setting title from Turnitin plagiarism plugin settings to Turnitin plugin settings.
+// $string['turnitinpluginsettings'] = 'Turnitin plagiarism plugin settings';
+$string['turnitinpluginsettings'] = 'Turnitin settings';
+// END UCLA MOD: CCLE-7850.
 $string['pperrorsdesc'] = 'There has been a problem in trying to upload the files below to Turnitin. To resubmit, select the files you wish to resubmit and press the resubmit button. These will then be processed the next time the cron is run.';
 $string['pperrorssuccess'] = 'The files you selected have been resubmitted and will be processed by the cron.';
 $string['pperrorsfail'] = 'There was a problem with some of the files you selected, A new cron event could not be created for them.';
